@@ -1,0 +1,106 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--light); 
+    background-color:var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container, #container{
+    margin: auto;
+    padding: 20px;
+    max-width: 1440px;
+   
+}
+h1{ 
+    font-size:40px;
+    color: var(--gray);
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    display: flex;
+    margin-bottom: 20px;
+}
+.input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--light);
+    border-radius: 16px;
+    background-color: var(--darker);
+}
+.input::placeholder{
+    color: var(--gray);
+}
+.complete, .delete{
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: inherit;
+    text-transform: uppercase;  
+}
+.submit{
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 16px;
+    background-color: inherit;
+    background-image: linear-gradient(to right, var(--pink),var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+.button{
+    display: flex;
+}
+.complete{
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink),var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.complete:hover{
+    opacity: 0.7;
+}
+.delete{
+    color:crimson;;
+}
+.list__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    background: var(--darkest);
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+.active{
+    opacity: 0.4;
+    background: var(--darkest);
+    text-decoration:line-through;
+}
